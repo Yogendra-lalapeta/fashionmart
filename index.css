@@ -1,0 +1,570 @@
+ #navbar{ 
+    background-color:white;
+    display:flex;
+    justify-content: space-around;
+    height:100px;
+    margin-top: 0px;
+    z-index: 9;
+}
+.bar{
+    position:fixed;
+    margin-top:0px;
+    z-index:9;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin-bottom:100px;
+}
+#ii{
+    height:200px;
+    border:black 3px solid;
+    margin-top:100px;
+    
+}
+#navbar a{
+    text-decoration: none;
+    margin-top:20px; 
+    margin-bottom:15px; 
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing:1.5px;
+    
+}
+#navbar a:hover{
+    color:Blue;
+    border-bottom:4px blue solid;
+}
+#navbar input{
+    width: 200px;
+    height:30px;
+    font-family: Arial;
+    color:black;
+    letter-spacing:1px;
+    border-radius: 5px;
+    padding-left:20px;
+    margin-top:20px;
+    background-color:transparent;
+}
+#navbar input::placeholder{
+    color:black;
+}
+#navbar input:focus{
+    outline:none;
+}
+#navbar button{
+    background-color: rgb(56, 56, 235);
+    color:white;
+    width: 100px;
+    height:30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top:20px;
+
+}
+#navbar button:hover{
+    background-color:blue; 
+}
+body{
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    border-left:30px rgb(75, 75, 194) solid;
+    overflow-x: hidden;
+}
+#main{
+    background-image:url("bg.jpg");
+    display:flex;
+    width:1330px;
+}
+#main h2{
+    color:black;
+    padding-top:200px;
+    padding-left:100px;
+}
+#main img{
+    margin-top:150px;
+    width:500px;
+    height:300px;
+    
+}
+#products-section{
+    display:flex;
+    justify-content: space-between;
+    width:1240px;
+}
+#products-section #item{
+    width:16.3%;
+    padding:10px;
+    border:10px solid blue;
+    margin:10px;
+}
+#products-section #item #itemimage:hover{
+    box-shadow: 0px 0px 10px rgb(48, 47, 47);  
+}
+#products-section #item #itemimage{
+    width:100%;
+    height:200px;   
+}
+#products-section #item h3{
+    color:brown;
+    text-align:center;
+    font-size: 25px;
+}
+#products-section #brand{
+    width:20%;
+    padding:10px;
+    border:10px solid blue;
+    margin:10px;
+}
+#products-section #brand a #brandimage{
+    width:100%;
+    height:250px;
+}
+#products-section #brand a #brandimage:hover{
+    box-shadow: 0px 0px 10px rgb(48, 47, 47); 
+}
+#products-section #brand h3{
+    color:brown;
+    text-align:center;
+    font-size: 25px;
+}
+#categories{
+    display:flex;
+    width:1200px;
+}
+#categories #item{
+    width:25%;
+    border:10px blue solid;
+    padding:10px;
+    margin:30px;
+}
+#categories #item img{
+    width:100%;
+    height:300px;
+}
+#categories #item h3{
+    color:brown;
+    text-align:center;
+    font-size: 25px;
+}
+#categories #item h4{
+    color:black;
+    text-align:center;
+    font-size: 20px;
+}
+#categories #item button{
+    width:90px;
+    height:30px;
+    background-color:rgb(56, 56, 235);
+    font-weight:bold;
+    float:right;
+    margin-right:20px;
+    border-radius:5px;
+}
+#categories #item a{
+    color:white;
+    text-decoration:none;
+}
+#categories #item button:hover{
+    background-color:blue; 
+    box-shadow: 0px 0px 10px rgb(48, 47, 47);
+    letter-spacing:1px;
+}
+#explore{
+    margin-top:30px;
+    margin-left:1000px;
+    width:150px;
+    height:40px;
+    background-color:rgb(56, 56, 235);
+    border-radius:10px;
+}
+#explore a{
+    color:white;
+    text-decoration: none;;
+}
+#explore:hover{
+    background-color:blue;
+    box-shadow:0 0 10px grey;
+    letter-spacing:1px;
+}
+#sale{
+    height:150px;
+    border:5px solid blue;
+    /* background-color:black; */
+    color:gold;
+    text-align:center;
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    margin:20px;
+    width:1200px;
+}
+#sale img{
+    height:100px;
+    width:400px;
+}
+
+body #head{
+    text-align:center;
+    font-size: 50px;
+    font-family: arial;
+    width:1300px;
+}
+#keybox{
+    display:flex;
+    width:1300px; 
+    justify-content: left;
+}
+#keybox #list{
+    width:50%;
+    margin:10px;
+}
+#list li{ 
+    list-style:none;
+    margin:30px;
+    border-left:4px solid goldenrod;
+    margin-left:60px;
+    height:40px;
+    font-weight: bold;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    box-shadow: 0 0 20px rgb(122, 121, 121);
+}
+#keybox #listimg{
+    height:700px;
+    width:40%;
+    
+}
+#keybox #listimg img{
+    width:100%;
+    height:700px;
+}
+body #key{
+    text-align:center;
+    color:blueviolet;
+    padding:40px;
+    font-size: 50px;
+    font-family: arial;
+}
+#testi{
+    height:500px;
+    padding:10px;
+    width:1300px;
+}
+#testi #clients{
+    text-align:center;
+    font-size:50px;
+    color:brown;
+}
+#testi #testi_container{
+    margin-right:10%;
+    margin-left:10%;
+    text-align:center;
+    height: 450px;
+}
+#testi #testi_container .carousel-inner{
+    background-color:white;
+    
+} 
+#testi #testi_container #item{
+    width:100%;
+    margin:20px;
+    background-color: white;
+}
+#item_img{
+    width:1000px;
+    height:250px;
+    overflow:hidden;
+    padding-top:40px;
+}
+#item_img img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    margin-top:5px;
+}
+#item_content{
+    padding-top:20px;
+    text-align:center;
+    font-family: arial;
+    font-size:15px;
+}
+#tt{
+    color:brown;
+    font-size: 20px;
+}
+footer{
+  background-color:azure; 
+  padding:50px;
+  width:550px;
+  margin-left:400px;
+  margin-top:50px; 
+  margin-bottom:100px;
+}
+footer #pages{
+    text-align:center;
+}
+footer #pages h3{
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer a{
+    text-decoration:none;
+    margin:10px;
+    color:orange;
+    font-size:15px;
+}
+footer a:hover{
+    letter-spacing:1.5px;
+    text-decoration:none;
+    color:orange;
+    font-weight:bold;
+}
+footer #doc{
+    text-align:center;
+}
+footer #doc h3{
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer #social{
+    text-align:center;
+}
+footer #social h3{
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer #contact{
+    text-align:center;
+}
+footer #contact h3{
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer #social a{
+    font-size:30px;
+    margin:10px;
+}
+footer #social a:hover{
+   color:blue;
+   text-decoration:none; 
+}
+footer #contact a{
+    font-size:30px;
+    margin:10px;
+}
+footer #contact a:hover{
+   color:blue;
+   text-decoration:none; 
+}
+#about_us{
+    padding-top:100px;
+    padding-left:20px;
+    letter-spacing:1px;
+    width:1300px;
+}
+#about_us h3{
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:blue;
+    text-align:center;
+}
+#data{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:30px;
+    text-align:center;
+
+}
+#contact_container h3{
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:Blue;
+    text-align:center;
+}
+#contact_container {
+    margin-top:100px;
+    width:1250px;
+
+}
+#g_map{
+    border:5px blue solid;
+}
+#contact_container #content{
+    text-align:center;
+    
+}
+#back{
+    background-image: linear-gradient(to left,blue,rgb(249, 54, 87));
+    height:300px;
+    color:brown;
+    font-size:40px;
+    text-align:center;
+}
+#in{
+    margin-top:100px;
+    padding-top:100px;
+    display:flex;
+    justify-content: space-around;
+    color:rgb(182, 249, 249);
+}
+#back #in img{
+    width:100%;
+}
+body #form-bg{
+    width:600px;
+    height:500px;
+    border:2px black solid;
+    margin-left:30%; 
+    padding:20px;
+    margin-left:350px;
+    background-color: rgb(124, 124, 223);
+}
+#heading{
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+}
+#form-bg h5{
+    text-align:center;   
+}
+#form input,textarea{
+    margin:10px;
+    width:100%;
+    border:none;
+    border-bottom:rgb(229, 181, 60) 4px solid;
+    cursor:pointer;
+    font-size:15px;
+    letter-spacing:1px;
+    background-color: transparent;
+}
+input::placeholder,textarea::placeholder{
+    font-weight: bold;
+    color:black;
+    letter-spacing:1px;
+}
+#form input:hover, textarea:hover{
+    border-bottom:brown 6px solid;
+    box-shadow: 2px,2px,10px,black;
+}
+#form input:focus, textarea:focus{
+    outline:none;
+}
+#blog-back{
+    margin-top:100px;
+    margin-bottom:100px;
+    display:flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, blue,rgb(252, 134, 154));
+    width:1250px;
+    height:auto;
+}
+#blog-back #blog-img{
+    width:100%;
+    border:3px;
+    margin:10px;
+}
+#blog-back #blog-img img{
+    width:500px;
+}
+#blog-back #blog-text{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:1px;
+    color:aqua;
+    padding-top:70px;
+}
+#addressform{
+    margin-top:100px;
+    background-color:dodgerblue;
+    margin-left:200px;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-weight:bold;
+    color:black;
+    letter-spacing:1px;
+}
+#addressform input{
+    width:800px;
+    margin:10px;
+    margin-left:100px;
+    padding:10px; 
+}
+#addressform :focus{
+    outline: none;
+}
+#addressform label{
+    color:brown;
+    font-weight: bold;
+    font-size:20px;
+    /* width:800px; */
+    margin-left:100px;
+}
+#addressform #button{
+    margin-left:300px;
+}
+#addressform button{
+    width:120px;
+    height:40px;
+    background-color:brown;
+    color:white;
+    margin:10px;
+    border-radius:10px;
+}
+#addressform button a{
+    color:white;
+}
+#addressform #button :hover{
+    background-color:rgb(109, 28, 28);
+}
+#addressform button a:hover{
+    color:white;
+    text-decoration: none;
+}
+#bara{
+    background-image:linear-gradient(to right, blue, brown);
+    height:400px;
+    padding:100px;
+    padding-left:300px;
+}
+#bara h3{
+    font-size:35px;
+    color:white;
+    font-family:arial;
+    letter-spacing:1px;
+}
+#bara h4{
+    font-size:20px;
+    margin-left:50px;
+    color:brown;
+    margin-top:50px;
+}
+#bara button{
+    margin-top:80px;
+    margin-left:400px;
+    border-radius:10px;
+    width:120px;
+    height:40px;
+    background-color:blue;
+}
+#bara button:hover{
+    box-shadow: 0 0 20px white;
+    background-color:cornflowerblue;
+}
+#bara a{
+    color:white;
+}
+#bara a:hover{
+    text-decoration: none;
+}

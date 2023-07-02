@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ecommerce Website  |  Contact Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar" class="bar">
+            <img src="C:\Users\Lalpeta Yogendra\OneDrive\Desktop\web pages\1stop ecommerce\E commerce\images\logo.png">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About Us</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    
+        <div id="contact_container">
+        <h3>Contact Us</h3>
+        <div id="g_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11999.889065383286!2d79.46868495406316!3d13.656434020041857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4991206ff455%3A0x37f34fc0f435a909!2sSV%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1668233428819!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="content">
+            <p><b>Address:</b> Karakambadi road, Tirupati 517501</p>
+            <p><b>Call:</b>+919676124085</p>
+            <p><b>Mail Us:</b>lalapetayogendra55@gmail.com"</p>
+        </div>
+    </div>
+    <div id="form-bg">
+      <div id="form">
+      <h2 id="heading">Register Here</h2>
+      <h5>Register by entering your details..</h5>
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="Email Id" required><br>
+        <input type="number" placeholder="Contact Number"><br>
+        <textarea placeholder="Message" rows="5" cols="40"></textarea>
+        <button type="submit" name="submit" style="background-color:rgb(229, 181, 60);width:100px;margin-left:400px;border-radius:10px;height:40px;margin-top:40px;color:white">Submit</button>
+      </div>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwCsiAzddBLisqoub_f5Qr4s1OqyUyW0z06lH7XkhLAdsfAqTwJBFrQxy-2czIa1MFWdg/exec'
+      const form = document.forms['form']
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, {
+                  method: 'POST',
+                  body: new FormData(form)
+              })
+              .then(response => alert(
+                  "Thanks you for submitting your details !!!"))
+              
+              .catch(error => console.error('Error!', error.message))
+      })
+   
+    </script>
+        <footer>
+            <div id="logo">
+              <a href="#"><img src="C:\Users\Lalpeta Yogendra\OneDrive\Desktop\web pages\1stop ecommerce\E commerce\images\logo.png" width="150px"></a>
+            </div>
+            <div id="pages">
+              <h3>Pages</h3>
+              <a href="about.html">About Us </a>|
+              <a href="categories.html">Categories</a>|
+              <a href="blogs.html">Blogs  </a>|
+              <a href="">Login  </a>|
+              <a href="">Sign Up</a>
+            </div>
+            <div id="doc">
+              <h3>Documents</h3>
+              <a href="">Privacy Policy</a>|
+              <a href="">Terms of Use</a>|
+              <a href="">Refund Policy</a>
+            </div>
+            <div id="social">
+              <h3>Follow Us</h3>
+              <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div id="contact">
+              <h3>Contact Us</h3>
+              <a href="https://api.WhatsApp.com/send?phone: +919676124085"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>  
+              <a href="tel: +919676124085"><i class="fa fa-phone" aria-hidden="true"></i></a>
+              <a href="mailto:lalapetayogendra55@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+            <p>Copy right @Fashion Mart All rights reserved</p>
+          </footer>
+    </body>

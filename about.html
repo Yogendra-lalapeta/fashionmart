@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ecommerce Website  |  About Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav id="navbar" class="bar">
+            <img src="C:\Users\Lalpeta Yogendra\OneDrive\Desktop\web pages\1stop ecommerce\images\logo.png">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="#">About Us</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        
+        <div id="about_us">
+            <div id="data">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat illo, tenetur fuga in doloribus amet ipsa iste dolorum commodi<br> perspiciatis totam velit praesentium error asperiores quo soluta odio, accusantium distinctio. Amet excepturi a magni aperiam<br>harum. Quam officia maxime facilis quae, vitae, laudantium dolorem quisquam velit aliquam neque ullam harum! Lorem ipsum dolor <br> sit amet, consectetur adipisicing elit. Nostrum, officia?
+                </p>
+                <hr>
+                <h3>Our Mission</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas fugit quaerat expedita laboriosam, ipsum neque ipsam doloribus consectetur in a culpa tempore. Omnis eveniet dolorum odio deserunt, unde libero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores a itaque rem voluptas reiciendis hic deleniti amet. Adipisci, recusandae sunt.</p>
+                <hr>
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo at ipsa tempora vel blanditiis autem nostrum nisi qui. Dolor, labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repellendus molestias veritatis beatae qui unde sint odit quod voluptas neque.</p>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="form-bg">
+          <div id="form">
+          <h2 id="heading">Register Here</h2>
+          <h5>Register by entering your details..</h5>
+            <input type="text" placeholder="Full Name" required><br>
+            <input type="email" placeholder="Email Id" required><br>
+            <input type="number" placeholder="Contact Number"><br>
+            <textarea placeholder="Message" rows="5" cols="40"></textarea>
+            <button type="submit" name="submit" style="background-color:rgb(229, 181, 60);width:100px;margin-left:400px;border-radius:10px;height:40px;margin-top:40px;color:white">Submit</button>
+          </div>
+        </div>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwCsiAzddBLisqoub_f5Qr4s1OqyUyW0z06lH7XkhLAdsfAqTwJBFrQxy-2czIa1MFWdg/exec'
+          const form = document.forms['form']
+          form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, {
+                      method: 'POST',
+                      body: new FormData(form)
+                  })
+                  .then(response => alert(
+                      "Thanks you for submitting your details !!!"))
+                  
+                  .catch(error => console.error('Error!', error.message))
+          })
+       
+        </script>
+        <footer>
+            <div id="logo">
+              <a href="#"><img src="C:\Users\Lalpeta Yogendra\OneDrive\Desktop\web pages\1stop ecommerce\images\logo.png" width="150px"></a>
+            </div>
+            <div id="pages">
+              <h3>Pages</h3>
+              <a href="about.html">About Us </a>|
+              <a href="services.html">Services </a>|
+              <a href="blogs.html">Blogs  </a>|
+              <a href="#form">Register </a>|
+            </div>
+            <div id="doc">
+              <h3>Documents</h3>
+              <a href="">Privacy Policy</a>|
+              <a href="">Terms of Use</a>|
+              <a href="">Refund Policy</a>
+            </div>
+            <div id="social">
+              <h3>Follow Us</h3>
+              <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div id="contact">
+              <h3>Contact Us</h3>
+              <a href="https://api.WhatsApp.com/send?phone: +919676124085"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>  
+              <a href="tel: +919676124085"><i class="fa fa-phone" aria-hidden="true"></i></a>
+              <a href="mailto:lalapetayogendra55@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            </div>
+            <p>Copy right @Fashion Mart All rights reserved</p>
+        </footer>
+    </body>
+    
